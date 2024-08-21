@@ -38,8 +38,8 @@ public class SearchLevels {
 
     private static final String CPE_PREFIX = "cpe:2.3:";
     private static final String OLD_CPE_PREFIX = "cpe:/";
-    private static final String CPE_WILDCARD = ".*";
-    private static final String CPE_NEEDLE_PREFIX = CPE_PREFIX + ".:";
+    private static final String CPE_WILDCARD = "*";
+    private static final String CPE_NEEDLE_PREFIX = CPE_PREFIX + "?:";
 
     private static final String PROPERTIES_FILE_PATH = "/sw360.properties";
     private static final String VENDOR_THRESHOLD_PROPERTY = "cvesearch.vendor.threshold";
