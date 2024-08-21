@@ -52,7 +52,7 @@ processThrift() {
 
   make -j"$(nproc)"
 
-  DESTDIR="${DESTDIR:-$BASEDIR/dist/thrift-$VERSION}" make install
+  make install
 }
 
 processThrift

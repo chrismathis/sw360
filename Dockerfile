@@ -22,6 +22,7 @@ ARG THRIFT_VERSION
 RUN --mount=type=cache,target=/var/cache/apt \
     apt-get -qq update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    apt-utils \
     bison \
     build-essential \
     ca-certificates \
@@ -89,7 +90,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     zip \
     unzip \
     && rm -rf /var/lib/apt/lists/* \
-    && pip install mkdocs-material
+    && pip install --break-system-packages mkdocs-material
 
 # Prepare maven from binary to avoid wrong java dependencies and proxy
 COPY scripts/docker-config/mvn-proxy-settings.xml /etc

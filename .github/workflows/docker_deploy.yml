@@ -74,7 +74,7 @@ jobs:
       - name: Build thrift image
         uses: heliocastro/docker-build-control@v1
         with:
-          name: thrift
+          name: sw360thriftbuild
           token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ env.THRIFT_VERSION }}
           invalidate-cache: ${{ inputs.invalidate-cache }}
