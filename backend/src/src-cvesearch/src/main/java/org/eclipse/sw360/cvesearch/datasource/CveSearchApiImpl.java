@@ -40,7 +40,7 @@ public class CveSearchApiImpl implements CveSearchApi {
     private String CVE_SEARCH_CVEFOR  = "cvefor";
     private String CVE_SEARCH_BROWSE  = "browse";
     private String CVE_SEARCH_CVE     = "cve";
-    public String CVE_SEARCH_WILDCARD = ".*";
+    public String CVE_SEARCH_WILDCARD = "*";
 
     private Type META_TARGET_TYPE = new TypeToken<Map<String,Object>>(){}.getType();
 
